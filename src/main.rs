@@ -1,7 +1,7 @@
 #![allow(unused_variables)]
 #![allow(dead_code)]
-mod vectors;
+mod debug;
 
 fn main() {
-    vectors::main();
+    debug::main();
 }
