@@ -7,5 +7,6 @@ mod from_book;
 fn main() {
     // examples::formated_print::main();
     // piston::main();
-    from_book::display::main();
+    // from_book::display::main();
+    examples::debug::deep_struct::main();
 }
