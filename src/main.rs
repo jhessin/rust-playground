@@ -1,7 +1,7 @@
 #![allow(unused_variables)]
 #![allow(dead_code)]
-mod debug;
+mod display;
 
 fn main() {
-    debug::main();
+    display::main();
 }
