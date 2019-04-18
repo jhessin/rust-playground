@@ -1,7 +1,14 @@
 [package]
 name = "rust-playground"
 version = "0.1.0"
-authors = ["jhessin"]
+authors = ["Jim Hessin <jhessin@gmail.com>"]
 edition = "2018"
 
+[[bin]]
+name = "rust-playground"
+
 [dependencies]
+piston = "0.42.0"
+piston2d-graphics = "0.30.0"
+pistoncore-glutin_window = "0.54.0"
+piston2d-opengl_graphics = "0.59.0"

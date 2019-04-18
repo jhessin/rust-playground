@@ -1,7 +1,7 @@
 #![allow(unused_variables)]
 #![allow(dead_code)]
-mod display;
+mod piston;
 
 fn main() {
-    display::main();
+    piston::main();
 }
