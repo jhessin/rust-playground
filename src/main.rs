@@ -8,5 +8,5 @@ fn main() {
     // examples::formated_print::main();
     // piston::main();
     // from_book::display::main();
-    examples::formatting::main();
+    examples::primitives::main();
 }
