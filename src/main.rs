@@ -4,5 +4,5 @@ mod examples;
 mod from_book;
 
 fn main() {
-  examples::testcase_list::main();
+  crate::examples::testcase_list::main();
 }
