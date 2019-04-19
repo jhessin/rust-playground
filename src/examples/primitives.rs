@@ -1,3 +1,4 @@
+#![allow(unused_assignments)]
 pub fn main() {
     // Variables can be type annotated.
     let logical: bool = true;
