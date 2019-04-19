@@ -11,10 +11,26 @@ struct Nil;
 struct Pair(i32, f32);
 
 // A struct with two fields
-#[derive(Debug)]
+#[derive(Debug, Copy, Clone)]
 struct Point {
   x: f32,
   y: f32,
+}
+
+impl Point {
+    fn Square (&self, size: f32) -> Rectangle {
+      let p1 = Point {
+        x: self.x,
+        y: self.y
+      };
+  let mut p2 = p1;
+      p2.x += size;
+      p2.y += size;
+      Rectangle {
+        p1,
+        p2
+      }
+    }
 }
 
 // Structs can be reused as fields of another struct
