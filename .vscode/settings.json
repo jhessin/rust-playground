@@ -2,8 +2,5 @@
   "files.exclude": {
     "target": true,
     "Cargo.lock": true
-  },
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
-  "editor.formatOnType": true
+  }
 }

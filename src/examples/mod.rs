@@ -8,3 +8,4 @@ pub mod formatting;
 pub mod primitives;
 pub mod literals;
 pub mod tuples;
+pub mod structures;
