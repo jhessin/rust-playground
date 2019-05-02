@@ -2,8 +2,9 @@
 */
 
 use std::collections::HashMap;
-use std::fmt::{Display, Formatter, self};
+use std::fmt::{self, Display, Formatter};
 
+#[derive(Debug)]
 struct Company {
   data: HashMap<String, Vec<String>>,
 }
@@ -26,10 +27,10 @@ impl Company {
 
 impl Display for Company {
   fn fmt(&self, f: &mut Formatter) -> fmt::Result {
-    for (k, v) in self.data.iter() {
-      writeln!(f, "{}", k)?;
+    for (k, v) in &self.data {
+      writeln!(f, "{}", &k)?;
       for name in v {
-        writeln!(f, "\t{}", name)?;
+        writeln!(f, "\t{}", &name)?;
       }
     }
     write!(f, "")
@@ -57,7 +58,7 @@ pub fn main() {
           }
         }
       } else if cmd.eq_ignore_ascii_case("display") {
-        println!("{}", company);
+        println!("{:?}", company);
       } else if cmd.eq_ignore_ascii_case("quit") {
         println!("Goodbye");
         break;
