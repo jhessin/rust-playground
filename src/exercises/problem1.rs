@@ -54,6 +54,8 @@ pub fn main() {
   use std::io;
   let mut data: Vec<i32> = vec![]; //50, 85, 25, 65, 85];
 
+  println!("Enter integers to be processed. Any non-integer will end input.");
+
   loop {
     let mut input = String::new();
     io::stdin().read_line(&mut input).expect("Failed to read line");
