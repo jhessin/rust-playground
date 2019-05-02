@@ -57,7 +57,7 @@ pub fn main() {
   loop {
     let mut input = String::new();
     io::stdin().read_line(&mut input).expect("Failed to read line");
-    if let Ok(i) = input.parse::<i32>() {
+    if let Ok(i) = input.trim().parse::<i32>() {
       data.push(i);
     } else {
       break;
