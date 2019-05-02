@@ -2,35 +2,66 @@
 */
 
 use std::collections::HashMap;
-use std::fmt::{ Display, Formatter, Result as FmtResult };
-
-struct Department {
-  name: String,
-  employees: Vec<String>,
-}
-
-impl Display for Department {
-  fn fmt(&self, f: &mut Formatter) -> FmtResult {
-    write!(f, "{}")
-  }
-}
+use std::fmt::{Display, Formatter, self};
 
 struct Company {
-  data: HashMap<String, Department>
+  data: HashMap<String, Vec<String>>,
+}
+
+impl Company {
+  fn new() -> Company {
+    Company {
+      data: HashMap::new(),
+    }
+  }
+
+  fn add(&mut self, department: &str, name: &str) {
+    let department = department.to_owned();
+    let name = name.to_owned();
+
+    let entry = self.data.entry(department).or_insert(vec![]);
+    entry.push(name);
+  }
 }
 
 impl Display for Company {
-  fn add(&mut self, department: &str, employee: &str) {
-    let mut Company{data} = self;
-
-    let mut entry = data.entry(department).or_insert(Vec::new());
-    entry.push(employee);
-  }
-
-  fn fmt(&self, f: &mut Formatter) -> FmtResult {
-
+  fn fmt(&self, f: &mut Formatter) -> fmt::Result {
+    for (k, v) in self.data.iter() {
+      writeln!(f, "{}", k)?;
+      for name in v {
+        writeln!(f, "\t{}", name)?;
+      }
+    }
+    write!(f, "")
   }
 }
 pub fn main() {
+  use std::io;
 
+  loop {
+    println!("Please enter a comand: (Add), (Display), (Quit)");
+
+    let mut company = Company::new();
+    let mut input = String::new();
+    io::stdin()
+      .read_line(&mut input)
+      .expect("Error reading line");
+
+    let mut iter = input.split_whitespace();
+    if let Some(cmd) = iter.next() {
+      if cmd.eq_ignore_ascii_case("add") {
+        if let Some(department) = iter.next() {
+          for name in iter {
+            company.add(department, name);
+            println!("{} added to {}", name, department);
+          }
+        }
+      } else if cmd.eq_ignore_ascii_case("display") {
+        println!("{}", company);
+      } else if cmd.eq_ignore_ascii_case("quit") {
+        println!("Goodbye");
+        break;
+      }
+    }
+  }
 }
