@@ -35,7 +35,14 @@ impl IgpayAtinlay {
 }
 
 pub fn main() {
-  IgpayAtinlay::from("This is piglatin at it's finest").print();
-  IgpayAtinlay::from("Hey! Someone took my apple!").print();
-  IgpayAtinlay::from("I got the first apple!").print();
+  use std::io;
+
+  println!("Enter a string to get the pig latin equivalent:");
+
+  let mut input = String::new();
+
+  io::stdin().read_line(&mut input)
+    .expect("Failed to read line");
+  
+  IgpayAtinlay::from(&input).print();
 }
