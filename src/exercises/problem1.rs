@@ -11,7 +11,11 @@ impl Integers {
     for i in &self.data {
       total += i;
     }
+    if self.data.len() == 0 {
+      total
+    } else {
     total / self.data.len() as i32
+    }
   }
 
   fn median(&self) -> i32 {
@@ -47,7 +51,18 @@ impl Integers {
 }
 
 pub fn main() {
-  let data = vec![50, 85, 25, 65, 85];
+  use std::io;
+  let mut data: Vec<i32> = vec![]; //50, 85, 25, 65, 85];
+
+  loop {
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).expect("Failed to read line");
+    if let Ok(i) = input.parse::<i32>() {
+      data.push(i);
+    } else {
+      break;
+    }
+  }
 
   let test = Integers { data };
 

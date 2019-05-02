@@ -6,5 +6,5 @@ mod exercises;
 
 fn main() {
   // crate::from_book::structs::main();
-  exercises::problem2::main();
+  exercises::problem1::main();
 }
