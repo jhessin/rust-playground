@@ -29,6 +29,8 @@ impl Display for Company {
   fn fmt(&self, f: &mut Formatter) -> fmt::Result {
     for (k, v) in &self.data {
       writeln!(f, "{}", &k)?;
+      let mut v = v.clone();
+      v.sort();
       for name in v {
         writeln!(f, "\t{}", &name)?;
       }
