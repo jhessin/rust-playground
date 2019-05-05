@@ -66,7 +66,7 @@ pub fn main() {
   let mut company = Company::new();
 
   loop {
-    println!("Please enter a comand: (Add), (Display), (Departments), (Quit)");
+    println!("Please enter a command: (Add), (Display), (Departments), (Quit)");
 
     let mut input = String::new();
     io::stdin()
