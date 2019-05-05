@@ -38,11 +38,11 @@ impl Display for Company {
 }
 pub fn main() {
   use std::io;
+  let mut company = Company::new();
 
   loop {
     println!("Please enter a comand: (Add), (Display), (Quit)");
 
-    let mut company = Company::new();
     let mut input = String::new();
     io::stdin()
       .read_line(&mut input)
@@ -58,7 +58,7 @@ pub fn main() {
           }
         }
       } else if cmd.eq_ignore_ascii_case("display") {
-        println!("{:?}", company);
+        println!("{}", company);
       } else if cmd.eq_ignore_ascii_case("quit") {
         println!("Goodbye");
         break;
