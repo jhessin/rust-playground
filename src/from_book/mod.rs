@@ -4,3 +4,4 @@ pub mod rectangles;
 pub mod vectors;
 pub mod structs;
 pub mod errors;
+pub mod traits;
