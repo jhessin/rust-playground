@@ -18,7 +18,7 @@ struct Point {
 }
 
 impl Point {
-    fn Square (&self, size: f32) -> Rectangle {
+    fn square(&self, size: f32) -> Rectangle {
       let p1 = Point {
         x: self.x,
         y: self.y
