@@ -1,11 +1,11 @@
-pub mod hello_world;
 pub mod comments;
-pub mod formated_print;
 pub mod debug;
 pub mod display;
-pub mod testcase_list;
+pub mod formated_print;
 pub mod formatting;
-pub mod primitives;
+pub mod hello_world;
 pub mod literals;
-pub mod tuples;
+pub mod primitives;
 pub mod structures;
+pub mod testcase_list;
+pub mod tuples;

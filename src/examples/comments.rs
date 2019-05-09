@@ -7,7 +7,7 @@ pub fn main() {
 
     // Run it. See? Now try deleting the two slashes, and run it again.
 
-    /* 
+    /*
      * This is another type of comment, the block comment. In general,
      * the line comment is the recommended comment style however the
      * block comment is extremely useful for temporarily disabling
@@ -27,4 +27,3 @@ pub fn main() {
     let x = 5 + /* 90 + */ 5;
     println!("Is `x` 10 or 100? x = {}", x);
 }
-

@@ -2,15 +2,18 @@
 #[derive(Debug)]
 struct Rectangle {
     width: u32,
-    height: u32
+    height: u32,
 }
 
 impl Rectangle {
-    fn square (size: u32) -> Rectangle {
-        Rectangle { width: size, height: size }
+    fn square(size: u32) -> Rectangle {
+        Rectangle {
+            width: size,
+            height: size,
+        }
     }
 
-    fn area (&self) -> u32{
+    fn area(&self) -> u32 {
         self.height * self.width
     }
 
@@ -23,7 +26,7 @@ pub fn main() {
     // The long way
     let width = 30;
     let height = 50;
-    
+
     // The tuple way
     // let rect1 = (30, 50);
 
@@ -33,12 +36,16 @@ pub fn main() {
 
     if rect1.can_hold(&rect2) {
         println!("Rect1: {:?} can hold Rect2: {:?}", rect1, rect2);
-    }else {
+    } else {
         println!("Rect1 cannot hold Rect2");
     }
 
     // println!("The area of the rectangle is {} square pixels.", area(width1, height1));
-    println!("The area of the rectangle: {:?} is {} square pixels.", &rect1, rect1.area());
+    println!(
+        "The area of the rectangle: {:?} is {} square pixels.",
+        &rect1,
+        rect1.area()
+    );
 }
 
 // fn area(width: u32, height: u32) -> u32 {

@@ -1,7 +1,7 @@
 #[derive(Debug)]
 struct Person<'a> {
     name: &'a str,
-    age: u8
+    age: u8,
 }
 
 pub fn main() {

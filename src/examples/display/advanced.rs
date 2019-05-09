@@ -31,54 +31,56 @@ impl fmt::Display for Point2D {
 // A complex number
 #[derive(Debug)]
 struct Complex {
-  real: f64,
-  imaginary: f64,
+    real: f64,
+    imaginary: f64,
 }
 
 // Implement for fmt::Display
 impl fmt::Display for Complex {
-  fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-    if self.imaginary > 0.0 {
-      write!(f, "{0} + {1}i", self.real, self.imaginary)
-    } else if self.imaginary < 0.0 {
-      write!(f, "{0} - {1}i", self.real, -self.imaginary)
-    } else {
-      write!(f, "{}", self.real)
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        if self.imaginary > 0.0 {
+            write!(f, "{0} + {1}i", self.real, self.imaginary)
+        } else if self.imaginary < 0.0 {
+            write!(f, "{0} - {1}i", self.real, -self.imaginary)
+        } else {
+            write!(f, "{}", self.real)
+        }
     }
-  }
 }
 
 pub fn main() {
     let minmax = MinMax(0, 14);
-  let complex1 = Complex {
-    real: 5.0,
-    imaginary: 0.0,
-  };
-  let complex2 = Complex {
-    real: 5.0,
-    imaginary: 7.0,
-  };
-  let complex3 = Complex {
-    real: 5.0,
-    imaginary: -7.0,
-  };
+    let complex1 = Complex {
+        real: 5.0,
+        imaginary: 0.0,
+    };
+    let complex2 = Complex {
+        real: 5.0,
+        imaginary: 7.0,
+    };
+    let complex3 = Complex {
+        real: 5.0,
+        imaginary: -7.0,
+    };
 
     println!("Compare structures:");
     println!("Display: {}", minmax);
     println!("Debug: {:?}", minmax);
-  println!("Display: {}", complex1);
-  println!("Debug: {:?}", complex1);
-  println!("Display: {}", complex2);
-  println!("Debug: {:?}", complex2);
-  println!("Display: {}", complex3);
-  println!("Debug: {:?}", complex3);
+    println!("Display: {}", complex1);
+    println!("Debug: {:?}", complex1);
+    println!("Display: {}", complex2);
+    println!("Debug: {:?}", complex2);
+    println!("Display: {}", complex3);
+    println!("Debug: {:?}", complex3);
 
-    let big_range =   MinMax(-300, 300);
+    let big_range = MinMax(-300, 300);
     let small_range = MinMax(-3, 3);
 
-    println!("The big range is {big} and the small is {small}",
-             small = small_range,
-             big = big_range);
+    println!(
+        "The big range is {big} and the small is {small}",
+        small = small_range,
+        big = big_range
+    );
 
     let point = Point2D { x: 3.3, y: 7.2 };
 
