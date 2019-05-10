@@ -1,3 +1,4 @@
+pub mod closures;
 pub mod enumerations;
 pub mod errors;
 pub mod guessing_game;
