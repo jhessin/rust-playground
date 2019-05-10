@@ -5,5 +5,5 @@ mod exercises;
 mod from_book;
 
 fn main() {
-    from_book::traits::main();
+    from_book::closures::main();
 }
