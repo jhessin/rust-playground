@@ -4,14 +4,14 @@ use std::thread;
 use std::time::Duration;
 
 pub fn main() {
+    println!("This is closures!");
     let simulated_user_specified_value = 10;
     let simulated_random_number = 7;
 
     generate_workout(simulated_user_specified_value, simulated_random_number);
-    println!("This is closures!")
 }
 
-struct Cacher<T, U, V>
+struct Cache<T, U, V>
 where
     T: Fn(U) -> V,
     U: Copy + Hash + Eq,
@@ -21,14 +21,14 @@ where
     value: HashMap<U, V>,
 }
 
-impl<T, U, V> Cacher<T, U, V>
+impl<T, U, V> Cache<T, U, V>
 where
     T: Fn(U) -> V,
     U: Copy + Hash + Eq,
     V: Copy,
 {
-    fn new(calculation: T) -> Cacher<T, U, V> {
-        Cacher {
+    fn new(calculation: T) -> Cache<T, U, V> {
+        Cache {
             calculation,
             value: HashMap::new(),
         }
@@ -47,7 +47,7 @@ where
 }
 
 fn generate_workout(intensity: u32, random_number: u32) {
-    let mut expensive_result = Cacher::new(|num| {
+    let mut expensive_result = Cache::new(|num| {
         println!("calculating slowly...");
         thread::sleep(Duration::from_secs(2));
         num
