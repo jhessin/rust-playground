@@ -7,6 +7,21 @@
       <sourceFolder url="file://$MODULE_DIR$/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/exercises/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/exercises/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/exercises/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/exercises/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/book-ch14/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-ch14/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-ch14/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/book-ch14/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/smart-ptrs/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/smart-ptrs/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/smart-ptrs/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/smart-ptrs/benches" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/book-ch14/target" />
+      <excludeFolder url="file://$MODULE_DIR$/exercises/target" />
+      <excludeFolder url="file://$MODULE_DIR$/smart-ptrs/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
