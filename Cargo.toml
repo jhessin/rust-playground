@@ -1,5 +1,9 @@
 [workspace]
 
 members = [
-"smart-ptrs"
+"smart-ptrs",
+"custom-smart-ptr",
+"chapter15-4",
+"chapter15-5",
+"chapter15-6"
 ]
