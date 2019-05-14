@@ -5,6 +5,10 @@ name = "ch16-1-threads"
 version = "0.1.0"
 
 [[package]]
+name = "ch16-2-messages"
+version = "0.1.0"
+
+[[package]]
 name = "chapter15-4"
 version = "0.1.0"
 

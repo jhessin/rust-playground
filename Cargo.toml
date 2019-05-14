@@ -6,5 +6,6 @@ members = [
 "chapter15-4",
 "chapter15-5",
 "chapter15-6",
-"ch16-1-threads"
+"ch16-1-threads",
+"ch16-2-messages"
 ]
