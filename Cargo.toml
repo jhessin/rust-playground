@@ -9,5 +9,7 @@ members = [
 "ch16-1-threads",
 "ch16-2-messages",
 "ch16-3-mutex",
-"ch17-2"
+"ch17-2",
+"ch17-3",
+"blog"
 ]

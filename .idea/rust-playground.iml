@@ -39,11 +39,21 @@
       <sourceFolder url="file://$MODULE_DIR$/ch17-2/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch17-2/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/ch17-2/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/blog/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/blog/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/blog/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/blog/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/ch17-3/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch17-3/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch17-3/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/ch17-3/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/.vscode" />
+      <excludeFolder url="file://$MODULE_DIR$/blog/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch16-1-threads/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch16-2-messages/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch16-3-mutex/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch17-2/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ch17-3/target" />
       <excludeFolder url="file://$MODULE_DIR$/chapter15-4/target" />
       <excludeFolder url="file://$MODULE_DIR$/chapter15-5/target" />
       <excludeFolder url="file://$MODULE_DIR$/chapter15-6/target" />

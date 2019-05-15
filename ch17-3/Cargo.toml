@@ -1,0 +1,8 @@
+[package]
+name = "ch17-3"
+version = "0.1.0"
+authors = ["Jim Hessin <jhessin@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+blog = { path = "../blog"}
