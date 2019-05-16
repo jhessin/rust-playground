@@ -71,6 +71,10 @@
       <sourceFolder url="file://$MODULE_DIR$/ch19-3/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch19-3/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/ch19-3/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/ch19-4/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch19-4/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch19-4/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/ch19-4/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/.vscode" />
       <excludeFolder url="file://$MODULE_DIR$/blog/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch16-1-threads/target" />
@@ -84,6 +88,7 @@
       <excludeFolder url="file://$MODULE_DIR$/ch19-1/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch19-2/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch19-3/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ch19-4/target" />
       <excludeFolder url="file://$MODULE_DIR$/chapter15-4/target" />
       <excludeFolder url="file://$MODULE_DIR$/chapter15-5/target" />
       <excludeFolder url="file://$MODULE_DIR$/chapter15-6/target" />
