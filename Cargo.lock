@@ -28,6 +28,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "ch18-1"
+version = "0.1.0"
+
+[[package]]
+name = "ch18-2"
+version = "0.1.0"
+
+[[package]]
 name = "chapter15-4"
 version = "0.1.0"
 

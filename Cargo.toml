@@ -11,5 +11,7 @@ members = [
 "ch16-3-mutex",
 "ch17-2",
 "ch17-3",
-"blog"
+"blog",
+"ch18-1",
+"ch18-2"
 ]
