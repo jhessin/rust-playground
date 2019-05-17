@@ -1,8 +1,11 @@
 use std::ops::Deref;
 
+#[allow(dead_code)]
+#[allow(unused_variables)]
 struct MyBox<T>(T);
 
 impl<T> MyBox<T> {
+    #[allow(dead_code)]
     fn new(x: T) -> MyBox<T> {
         MyBox(x)
     }
@@ -29,13 +32,7 @@ fn main() {
     println!("b = {}", b);
 
     // using List
-    let _list = Cons(
-        1,
-        Box::new(Cons(
-            2,
-            Box::new(Cons(3, Box::new(Nil))),
-        )),
-    );
+    let _list = Cons(1, Box::new(Cons(2, Box::new(Cons(3, Box::new(Nil))))));
 }
 
 #[cfg(test)]

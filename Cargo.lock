@@ -5,6 +5,18 @@ name = "blog"
 version = "0.1.0"
 
 [[package]]
+name = "ch15-4"
+version = "0.1.0"
+
+[[package]]
+name = "ch15-5"
+version = "0.1.0"
+
+[[package]]
+name = "ch15-6"
+version = "0.1.0"
+
+[[package]]
 name = "ch16-1-threads"
 version = "0.1.0"
 
@@ -53,18 +65,6 @@ version = "0.1.0"
 
 [[package]]
 name = "ch19-4"
-version = "0.1.0"
-
-[[package]]
-name = "chapter15-4"
-version = "0.1.0"
-
-[[package]]
-name = "chapter15-5"
-version = "0.1.0"
-
-[[package]]
-name = "chapter15-6"
 version = "0.1.0"
 
 [[package]]

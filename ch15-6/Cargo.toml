@@ -1,5 +1,5 @@
 [package]
-name = "chapter15-6"
+name = "ch15-6"
 version = "0.1.0"
 authors = ["Jim Hessin <jhessin@gmail.com>"]
 edition = "2018"

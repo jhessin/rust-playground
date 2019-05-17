@@ -365,7 +365,7 @@ fn main() {
     // Rust can’t check them, so responsibility falls on the programmer to
     // ensure safety.
     //
-    //Filename: src/main.rs
+    //Filename: src/lib.rs
     //
     // [This code block contains unsafe code.]
     extern "C" {
@@ -424,7 +424,7 @@ fn main() {
     // an example declaration and use of a static variable with a string
     // slice as a value.
     //
-    //Filename: src/main.rs
+    //Filename: src/lib.rs
     //
     static HELLO_WORLD: &str = "Hello, world!";
     //
@@ -452,7 +452,7 @@ fn main() {
     // variables is unsafe. Listing 19-10 shows how to declare, access, and
     // modify a mutable static variable named COUNTER.
     //
-    //Filename: src/main.rs
+    //Filename: src/lib.rs
     //
     // [This code block contains unsafe code.]
     static mut COUNTER: u32 = 0;

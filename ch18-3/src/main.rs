@@ -1,6 +1,7 @@
 // Pattern Syntax
 //
-
+#[allow(dead_code)]
+#[allow(unused_variables)]
 fn main() {
     //Throughout the book, you’ve seen examples
     // of many kinds of patterns. In this
@@ -48,7 +49,7 @@ fn main() {
     // the code will print before running this
     // code or reading further.
     //
-    //Filename: src/main.rs
+    //Filename: src/lib.rs
     //
     //fn main() {
     let x = Some(5);
@@ -210,7 +211,7 @@ fn main() {
     // fields, x and y, that we can break apart
     // using a pattern with a let statement.
     //
-    //Filename: src/main.rs
+    //Filename: src/lib.rs
     //
     struct Point {
         x: i32,
@@ -253,7 +254,7 @@ fn main() {
     // variables created in the let pattern are x
     // and y instead of a and b.
     //
-    //Filename: src/main.rs
+    //Filename: src/lib.rs
     //
     //struct Point {
     //    x: i32,
@@ -291,7 +292,7 @@ fn main() {
     // (which is true when y = 0), on the y
     // axis (x = 0), or neither.
     //
-    //Filename: src/main.rs
+    //Filename: src/lib.rs
     //
     //fn main() {
     let p = Point { x: 0, y: 7 };
@@ -348,7 +349,7 @@ fn main() {
     // patterns that will destructure each
     // inner value.
     //
-    //Filename: src/main.rs
+    //Filename: src/lib.rs
     //
     {
         enum Message {
@@ -520,7 +521,7 @@ fn main() {
     // including function parameters, as shown in
     // Listing 18-17.
     //
-    //Filename: src/main.rs
+    //Filename: src/lib.rs
     //
     fn foo(_: i32, y: i32) {
         println!(
@@ -650,7 +651,7 @@ fn main() {
     // but when we run this code, we should
     // only get a warning about one of them.
     //
-    //Filename: src/main.rs
+    //Filename: src/lib.rs
     //
     //fn main() {
     let _x = 5;
@@ -757,7 +758,7 @@ fn main() {
     // as it needs to be. Listing 18-24 shows
     // how to use .. with a tuple.
     //
-    //Filename: src/main.rs
+    //Filename: src/lib.rs
     //
     //fn main() {
     let numbers = (2, 4, 8, 16, 32);
@@ -786,7 +787,7 @@ fn main() {
     // using .. ambiguously, so it will not
     // compile.
     //
-    //Filename: src/main.rs
+    //Filename: src/lib.rs
     //
     // [This code does not compile!]
     //fn main() {
@@ -807,7 +808,7 @@ fn main() {
     //
     //error: `..` can only be used once per tuple
     // or tuple struct pattern -->
-    // src/main.rs:5:22  |
+    // src/lib.rs:5:22  |
     //5 |         (.., second, ..) => {
     //  |                      ^^
     //
@@ -890,7 +891,7 @@ fn main() {
     // can use a match guard to fix this
     // problem.
     //
-    //Filename: src/main.rs
+    //Filename: src/lib.rs
     //
     //fn main() {
     let x = Some(5);

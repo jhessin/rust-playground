@@ -1,22 +1,22 @@
 [workspace]
 
 members = [
-"smart-ptrs",
-"custom-smart-ptr",
-"chapter15-4",
-"chapter15-5",
-"chapter15-6",
+"blog",
+"ch15-4",
+"ch15-5",
+"ch15-6",
 "ch16-1-threads",
 "ch16-2-messages",
 "ch16-3-mutex",
 "ch17-2",
 "ch17-3",
-"blog",
 "ch18-1",
 "ch18-2",
 "ch18-3",
 "ch19-1",
 "ch19-2",
 "ch19-3",
-"ch19-4"
+"ch19-4",
+"custom-smart-ptr",
+"smart-ptrs",
 ]

@@ -59,7 +59,7 @@ fn main() {
 
         Rust doesn’t allow you to create your own operators or overload arbitrary operators. But you can overload the operations and corresponding traits listed in std::ops by implementing the traits associated with the operator. For example, in Listing 19-22 we overload the + operator to add two Point instances together. We do this by implementing the Add trait on a Point struct:
 
-        Filename: src/main.rs
+        Filename: src/lib.rs
     */
     {
         use std::ops::Add;
@@ -139,7 +139,7 @@ fn main() {
 
         When calling methods with the same name, you’ll need to tell Rust which one you want to use. Consider the code in Listing 19-24 where we’ve defined two traits, Pilot and Wizard, that both have a method called fly. We then implement both traits on a type Human that already has a method named fly implemented on it. Each fly method does something different.
 
-        Filename: src/main.rs
+        Filename: src/lib.rs
 
     */
     trait Pilot {
@@ -174,7 +174,7 @@ fn main() {
 
     When we call fly on an instance of Human, the compiler defaults to calling the method that is directly implemented on the type, as shown in Listing 19-25.
 
-    Filename: src/main.rs
+    Filename: src/lib.rs
 
     */
     let person = Human;
@@ -187,7 +187,7 @@ fn main() {
 
         To call the fly methods from either the Pilot trait or the Wizard trait, we need to use more explicit syntax to specify which fly method we mean. Listing 19-26 demonstrates this syntax.
 
-        Filename: src/main.rs
+        Filename: src/lib.rs
 
     */
     let person = Human;
@@ -210,7 +210,7 @@ fn main() {
 
         However, associated functions that are part of traits don’t have a self parameter. When two types in the same scope implement that trait, Rust can’t figure out which type you mean unless you use fully qualified syntax. For example, the Animal trait in Listing 19-27 has the associated function baby_name, the implementation of Animal for the struct Dog, and the associated function baby_name defined on Dog directly.
 
-        Filename: src/main.rs
+        Filename: src/lib.rs
     */
     trait Animal {
         fn baby_name() -> String;
@@ -241,7 +241,7 @@ fn main() {
 
         This output isn’t what we wanted. We want to call the baby_name function that is part of the Animal trait that we implemented on Dog so the code prints A baby dog is called a puppy. The technique of specifying the trait name that we used in Listing 19-26 doesn’t help here; if we change main to the code in Listing 19-28, we’ll get a compilation error.
 
-        Filename: src/main.rs
+        Filename: src/lib.rs
 
             println!("A baby dog is called a {}", Animal::baby_name());
 
@@ -250,7 +250,7 @@ fn main() {
         Because Animal::baby_name is an associated function rather than a method, and thus doesn’t have a self parameter, Rust can’t figure out which implementation of Animal::baby_name we want. We’ll get this compiler error:
 
         error[E0283]: type annotations required: cannot resolve `_: Animal`
-          --> src/main.rs:20:43
+          --> src/lib.rs:20:43
            |
         20 |     println!("A baby dog is called a {}", Animal::baby_name());
            |                                           ^^^^^^^^^^^^^^^^^
@@ -259,7 +259,7 @@ fn main() {
 
         To disambiguate and tell Rust that we want to use the implementation of Animal for Dog, we need to use fully qualified syntax. Listing 19-29 demonstrates how to use fully qualified syntax.
 
-        Filename: src/main.rs
+        Filename: src/lib.rs
     */
     println!("A baby dog is called a {}", <Dog as Animal>::baby_name());
     /*
@@ -289,7 +289,7 @@ fn main() {
 
         In the implementation of outline_print, we want to use the Display trait’s functionality. Therefore, we need to specify that the OutlinePrint trait will work only for types that also implement Display and provide the functionality that OutlinePrint needs. We can do that in the trait definition by specifying OutlinePrint: Display. This technique is similar to adding a trait bound to the trait. Listing 19-30 shows an implementation of the OutlinePrint trait.
 
-        Filename: src/main.rs
+        Filename: src/lib.rs
     */
 
     use std::fmt;
@@ -312,7 +312,7 @@ fn main() {
 
         Let’s see what happens when we try to implement OutlinePrint on a type that doesn’t implement Display, such as the Point struct:
 
-        Filename: src/main.rs
+        Filename: src/lib.rs
 
     */
     struct Point {
@@ -325,7 +325,7 @@ fn main() {
         We get an error saying that Display is required but not implemented:
 
         error[E0277]: the trait bound `Point: std::fmt::Display` is not satisfied
-          --> src/main.rs:20:6
+          --> src/lib.rs:20:6
            |
         20 | impl OutlinePrint for Point {}
            |      ^^^^^^^^^^^^ `Point` cannot be formatted with the default formatter;
@@ -335,7 +335,7 @@ fn main() {
 
         To fix this, we implement Display on Point and satisfy the constraint that OutlinePrint requires, like so:
 
-        Filename: src/main.rs
+        Filename: src/lib.rs
 
 
         use std::fmt;
@@ -353,7 +353,7 @@ fn main() {
 
         As an example, let’s say we want to implement Display on Vec<T>, which the orphan rule prevents us from doing directly because the Display trait and the Vec<T> type are defined outside our crate. We can make a Wrapper struct that holds an instance of Vec<T>; then we can implement Display on Wrapper and use the Vec<T> value, as shown in Listing 19-31.
 
-        Filename: src/main.rs
+        Filename: src/lib.rs
 
         use std::fmt;
     */

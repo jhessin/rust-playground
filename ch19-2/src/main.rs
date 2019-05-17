@@ -427,7 +427,7 @@ fn main() {
     /// . We
     ///     want to use an instance of Ball as the trait object Box<dyn Red>.
     ///
-    ///    Filename: src/main.rs
+    ///    Filename: src/lib.rs
     trait Red {}
 
     struct Ball<'a> {
