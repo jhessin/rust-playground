@@ -1,0 +1,13 @@
+[package]
+name = "hello_macro_derive"
+version = "0.1.0"
+authors = ["Jim Hessin <jhessin@gmail.com>"]
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+hello_macro = {path="../hello_macro"}
+syn = "0.14.4"
+quote = "0.6.3"

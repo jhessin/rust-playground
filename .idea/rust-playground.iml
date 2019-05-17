@@ -12,35 +12,17 @@
       <sourceFolder url="file://$MODULE_DIR$/custom-smart-ptr/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/custom-smart-ptr/benches" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/ch15-4/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ch15-4/examples"
-      isTestSource="false"
-
-      />
-      <sourceFolder url="file://$MODULE_DIR$/ch15-4/tests" isTestSource="true"
-      />
-      <sourceFolder url="file://$MODULE_DIR$/ch15-4/benches" isTestSource="true"
-
-      />
+      <sourceFolder url="file://$MODULE_DIR$/ch15-4/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch15-4/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/ch15-4/benches" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/ch15-5/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ch15-5/examples"
-      isTestSource="false"
-
-      />
-      <sourceFolder url="file://$MODULE_DIR$/ch15-5/tests" isTestSource="true"
-      />
-      <sourceFolder url="file://$MODULE_DIR$/ch15-5/benches" isTestSource="true"
-
-      />
+      <sourceFolder url="file://$MODULE_DIR$/ch15-5/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch15-5/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/ch15-5/benches" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/ch15-6/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ch15-6/examples"
-      isTestSource="false"
-
-      />
-      <sourceFolder url="file://$MODULE_DIR$/ch15-6/tests" isTestSource="true"
-      />
-      <sourceFolder url="file://$MODULE_DIR$/ch15-6/benches" isTestSource="true"
-
-      />
+      <sourceFolder url="file://$MODULE_DIR$/ch15-6/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch15-6/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/ch15-6/benches" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/ch16-1-threads/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch16-1-threads/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch16-1-threads/tests" isTestSource="true" />
@@ -93,16 +75,23 @@
       <sourceFolder url="file://$MODULE_DIR$/ch19-4/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch19-4/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/ch19-4/benches" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/ch15-4/examples" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ch15-4/tests" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/ch15-4/benches" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/ch15-5/examples" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ch15-5/tests" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/ch15-5/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/hello_macro_derive/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hello_macro_derive/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hello_macro_derive/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/hello_macro_derive/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/hello_macro/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hello_macro/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hello_macro/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/hello_macro/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/ch19-6/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch19-6/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch19-6/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/ch19-6/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/.vscode" />
       <excludeFolder url="file://$MODULE_DIR$/blog/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch15-4/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch15-5/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ch15-6/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch16-1-threads/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch16-2-messages/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch16-3-mutex/target" />
@@ -115,10 +104,10 @@
       <excludeFolder url="file://$MODULE_DIR$/ch19-2/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch19-3/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch19-4/target" />
-      <excludeFolder url="file://$MODULE_DIR$/ch15-4/target" />
-      <excludeFolder url="file://$MODULE_DIR$/ch15-5/target" />
-      <excludeFolder url="file://$MODULE_DIR$/ch15-6/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ch19-6/target" />
       <excludeFolder url="file://$MODULE_DIR$/custom-smart-ptr/target" />
+      <excludeFolder url="file://$MODULE_DIR$/hello_macro/target" />
+      <excludeFolder url="file://$MODULE_DIR$/hello_macro_derive/target" />
       <excludeFolder url="file://$MODULE_DIR$/smart-ptrs/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>

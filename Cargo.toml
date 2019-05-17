@@ -17,6 +17,9 @@ members = [
 "ch19-2",
 "ch19-3",
 "ch19-4",
+"ch19-6",
 "custom-smart-ptr",
+"hello_macro",
+"hello_macro_derive",
 "smart-ptrs",
 ]
